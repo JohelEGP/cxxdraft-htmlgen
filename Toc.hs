@@ -75,7 +75,7 @@ writeTocFiles sfs draft@Draft{..} = do
 			mconcat (tocChapter draft False . chapters) ++
 			mconcat (h 2
 				. (\cat -> simpleRender2 anchor{aHref="TocToSection/" ++ cat, aText=indexCatName cat})
-				. ["generalindex", "grammarindex", "headerindex", "libraryindex", "conceptindex", "impldefindex"])
+				. ["generalindex", "grammarindex", "headerindex", "moduleindex", "libraryindex", "conceptindex", "impldefindex"])
 
 	fullTocCss <- readFile "fulltoc.css"
 	let
@@ -89,4 +89,4 @@ writeTocFiles sfs draft@Draft{..} = do
 			mconcat (tocChapter draft True . chapters) ++
 			mconcat (h 2
 				. (\cat -> simpleRender2 anchor{aHref="SectionToSection/" ++ cat, aText=indexCatName cat})
-				. ["generalindex", "grammarindex", "headerindex", "libraryindex", "conceptindex", "impldefindex"])
+				. ["generalindex", "grammarindex", "headerindex", "moduleindex", "libraryindex", "conceptindex", "impldefindex"])

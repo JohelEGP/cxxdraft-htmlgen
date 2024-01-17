@@ -289,6 +289,7 @@ indexCatName :: (Eq b, Show b, IsString a, IsString b) => b -> a
 indexCatName "impldefindex" = "Index of implementation-defined behavior"
 indexCatName "libraryindex" = "Index of library names"
 indexCatName "headerindex" = "Index of library headers"
+indexCatName "moduleindex" = "Index of library modules"
 indexCatName "generalindex" = "Index"
 indexCatName "grammarindex" = "Index of grammar productions"
 indexCatName "conceptindex" = "Index of library concepts"
